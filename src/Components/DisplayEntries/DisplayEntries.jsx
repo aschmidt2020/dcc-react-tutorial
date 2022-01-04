@@ -11,7 +11,7 @@ const DisplayEntries = (props) => {
         <tbody>
           {props.parentEntries.map((entry, index) => {
             return ( //parenthesis because you are returning multiple lines of code
-                <tr>
+                <tr key={index}>
                   <td>{index + 1}</td> 
                   <td>{entry.weight}</td>
                   <td>{entry.date}</td>
